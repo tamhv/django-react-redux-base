@@ -4,6 +4,9 @@ import { push } from 'react-router-redux';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
+import 'primereact/resources/primereact.min.css';
+import 'primereact/resources/themes/omega/theme.css';
+
 import { authLogoutAndRedirect } from './actions/auth';
 import './styles/main.scss';
 

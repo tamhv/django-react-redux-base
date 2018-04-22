@@ -3,9 +3,13 @@ import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
+import { Button } from 'primereact/components/button/Button';
+
+
 import './style.scss';
 import reactLogo from './images/react-logo.png';
 import reduxLogo from './images/redux-logo.png';
+
 
 class HomeView extends React.Component {
     static propTypes = {
@@ -41,6 +45,12 @@ class HomeView extends React.Component {
                     <h4>Hello, {this.props.userName || 'guest'}.</h4>
                 </div>
                 <div className="margin-top-medium text-center">
+                    <Button label="Primary" />
+                    <Button label="Secondary" className="ui-button-secondary" />
+                    <Button label="Success" className="ui-button-success" />
+                    <Button label="Info" className="ui-button-info" />
+                    <Button label="Warning" className="ui-button-warning" />
+                    <Button label="Danger" className="ui-button-danger" />
                     <p>Attempt to access some <a onClick={this.goToProtected}><b>protected content</b></a>.</p>
                 </div>
                 <div className="margin-top-medium">
